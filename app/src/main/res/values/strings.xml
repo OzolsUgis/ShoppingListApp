@@ -12,6 +12,7 @@
     <string name="greeting">Hello,</string>
     <string name="inputEmpty">Please fill in all fields!</string>
     <string name="successfully_added_product">Product added!</string>
+    <string name="server_error">Server Error</string>
 
 
 </resources>

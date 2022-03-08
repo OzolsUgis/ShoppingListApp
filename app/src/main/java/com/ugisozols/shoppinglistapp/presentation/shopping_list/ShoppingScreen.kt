@@ -202,7 +202,7 @@ fun ShoppingScreen(
                         onCloseList = { viewModel.isExpanded = !viewModel.isExpanded },
                         onCategoryClick = {
                             viewModel.setCurrentCategory(it)
-                            // TODO : Add functionality
+                            viewModel.getProductList()
                             viewModel.isExpanded = false
                         }
                     )

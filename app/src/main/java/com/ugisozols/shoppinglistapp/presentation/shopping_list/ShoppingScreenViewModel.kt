@@ -6,14 +6,17 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.ugisozols.shoppinglistapp.R
 import com.ugisozols.shoppinglistapp.domain.models.Category
 import com.ugisozols.shoppinglistapp.domain.models.Product
 import com.ugisozols.shoppinglistapp.domain.preferences.Preferences
 import com.ugisozols.shoppinglistapp.domain.use_cases.UseCases
 import com.ugisozols.shoppinglistapp.utils.Resource
 import com.ugisozols.shoppinglistapp.utils.UiEvent
+import com.ugisozols.shoppinglistapp.utils.UiText
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -166,6 +169,7 @@ class ShoppingScreenViewModel @Inject constructor(
     init {
         preferences.saveShouldShowWelcome(false)
         setUsername()
+        getProductList()
     }
 
     /**
@@ -191,6 +195,27 @@ class ShoppingScreenViewModel @Inject constructor(
             name.value = ""
             amount.value = ""
             chosenCategoryName.value = ""
+        }
+    }
+
+    /**
+     * Function collects data from [currentCategory] state and updates
+     * list for the category of specific state
+     *
+     * This function is called in UI and [ShoppingScreenViewModel] init block with default value "general"
+     *
+     * In case of error return function sends event to [_uiEvent] to Show snackbar with error message
+     */
+    fun getProductList() {
+        viewModelScope.launch {
+            useCases.getProducts(currentCategory.value).collect { resource ->
+                _productListState.value = resource
+                when(resource){
+                    is Resource.Error -> _uiEvent.send(
+                        UiEvent.ShowSnackbar(UiText.StringResource(R.string.server_error))
+                    )
+                }
+            }
         }
     }
 

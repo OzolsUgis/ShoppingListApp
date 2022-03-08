@@ -10,6 +10,7 @@ import com.ugisozols.shoppinglistapp.data.local.preferences.PreferencesImpl
 import com.ugisozols.shoppinglistapp.data.repository.ShoppingListRepositoryImpl
 import com.ugisozols.shoppinglistapp.domain.preferences.Preferences
 import com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository
+import com.ugisozols.shoppinglistapp.domain.use_cases.GetProducts
 import com.ugisozols.shoppinglistapp.domain.use_cases.InsertProduct
 import com.ugisozols.shoppinglistapp.domain.use_cases.UseCases
 import com.ugisozols.shoppinglistapp.utils.Constants.DATE
@@ -64,6 +65,7 @@ object AppModule {
     @Provides
     @Singleton
     fun provideUseCases(repository: ShoppingListRepository) = UseCases(
-        insertProduct = InsertProduct(repository)
+        insertProduct = InsertProduct(repository),
+        getProducts = GetProducts(repository)
     )
 }
