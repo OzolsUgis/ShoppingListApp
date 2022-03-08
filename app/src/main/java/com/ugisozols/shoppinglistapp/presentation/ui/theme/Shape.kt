@@ -1,4 +1,4 @@
-package com.ugisozols.shoppinglistapp.ui.theme
+package com.ugisozols.shoppinglistapp.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
