@@ -153,10 +153,16 @@ fun ShoppingScreen(
                                             onValueChange = {
                                                 isChecked = !isChecked
                                                 if (it) {
-                                                    // TODO : Add functionality
+                                                    viewModel.updateCheckedProduct(
+                                                        products,
+                                                        it
+                                                    )
                                                     viewModel.onAddToList(products)
                                                 } else {
-                                                    // TODO : Add functionality
+                                                    viewModel.updateCheckedProduct(
+                                                        products,
+                                                        it
+                                                    )
                                                     viewModel.onRemoveFromList(products)
                                                 }
                                             }

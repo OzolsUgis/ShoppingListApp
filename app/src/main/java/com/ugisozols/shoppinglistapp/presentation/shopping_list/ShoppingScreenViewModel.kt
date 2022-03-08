@@ -230,6 +230,16 @@ class ShoppingScreenViewModel @Inject constructor(
         }
     }
 
+    /**
+     * Function requires [Product] object and [Boolean] values and sends these
+     * values to [UseCases.updateProduct] function
+     */
+    fun updateCheckedProduct(product: Product, value : Boolean){
+        viewModelScope.launch {
+            useCases.updateProduct(product, value)
+        }
+    }
+
 
 
 

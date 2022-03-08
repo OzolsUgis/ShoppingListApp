@@ -10,6 +10,7 @@ object Constants {
     const val SHOPPING_LIST_APP = "ShoppingListApp"
     const val DATE = "date"
     const val CATEGORY_FIELD = "category"
+    const val CHECKED_FIELD = "checked"
 
 
 }

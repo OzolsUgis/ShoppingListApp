@@ -7,5 +7,6 @@ package com.ugisozols.shoppinglistapp.domain.use_cases
 data class UseCases(
     val insertProduct : InsertProduct,
     val getProducts: GetProducts,
-    val deleteProducts: DeleteProducts
+    val deleteProducts: DeleteProducts,
+    val updateProduct: UpdateProduct
 )

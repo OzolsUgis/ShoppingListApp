@@ -8,6 +8,7 @@ import com.ugisozols.shoppinglistapp.data.mapper.toProducts
 import com.ugisozols.shoppinglistapp.domain.models.Product
 import com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository
 import com.ugisozols.shoppinglistapp.utils.Constants.CATEGORY_FIELD
+import com.ugisozols.shoppinglistapp.utils.Constants.CHECKED_FIELD
 import com.ugisozols.shoppinglistapp.utils.Resource
 import com.ugisozols.shoppinglistapp.utils.UiText
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -74,6 +75,6 @@ class ShoppingListRepositoryImpl @Inject constructor(
     }
 
     override suspend fun updateProduct(product: Product, value: Boolean) {
-        TODO("Not yet implemented")
+        productRef.document(product.id!!).update(CHECKED_FIELD, value)
     }
 }
