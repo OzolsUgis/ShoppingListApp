@@ -2,16 +2,11 @@ package com.ugisozols.shoppinglistapp.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val LightBlue = Color(0xF2AAC9CE)
-val LightPink = Color(0xFFF3DBCF)
+val LightPink = Color(0xFFFAD8D6)
 
-val TextColor = Color(0xFF707070)
-val ObjectColor = Color(0xFF707070)
+val LightPurple = Color(0xFFDDD6FA)
+
+val TextColor = Color(0xFFFF4F01)
+val ObjectColor = Color(0xFFFF4F01)
 
 val ColorDone = Color(0xFF148407)
-
-val BackgroundGradient = listOf(
-    LightPink,
-    LightPink,
-    LightBlue
-)

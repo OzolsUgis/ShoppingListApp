@@ -21,7 +21,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.ugisozols.shoppinglistapp.R
-import com.ugisozols.shoppinglistapp.presentation.ui.theme.BackgroundGradient
+import com.ugisozols.shoppinglistapp.presentation.ui.theme.LightPurple
 import com.ugisozols.shoppinglistapp.presentation.ui.theme.LocalSpacing
 import com.ugisozols.shoppinglistapp.presentation.ui.theme.ObjectColor
 import com.ugisozols.shoppinglistapp.presentation.ui.theme.TextColor
@@ -58,11 +58,7 @@ fun WelcomeScreen(
         modifier = Modifier
             .fillMaxSize()
             .background(
-                brush = Brush.linearGradient(
-                    BackgroundGradient,
-                    start = Offset.Zero,
-                    end = Offset.Infinite
-                )
+               color = LightPurple
             )
     ) {
         Column(

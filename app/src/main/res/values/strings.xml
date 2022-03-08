@@ -3,4 +3,13 @@
     <string name="enter_name">Enter your name</string>
     <string name="welcome_button_text">Next</string>
     <string name="empty_username_input">Please enter your name</string>
+    <string name="floating_action_button">Add</string>
+    <string name="alert_dialog_title">Add new product</string>
+    <string name="alert_dialog_name_text">Name:</string>
+    <string name="alert_dialog_amount_text">Amount:</string>
+    <string name="alert_dialog_category_text">Category:</string>
+    <string name="alert_dialog_noCategory_text">* if not chosen product will be seen in general category</string>
+    <string name="greeting">Hello,</string>
+
+
 </resources>

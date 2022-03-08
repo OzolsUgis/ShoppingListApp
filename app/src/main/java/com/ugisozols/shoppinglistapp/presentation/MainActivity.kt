@@ -10,6 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.ugisozols.shoppinglistapp.domain.preferences.Preferences
+import com.ugisozols.shoppinglistapp.presentation.shopping_list.ShoppingScreen
 import com.ugisozols.shoppinglistapp.presentation.ui.theme.ShoppingListAppTheme
 import com.ugisozols.shoppinglistapp.presentation.welcome_screen.WelcomeScreen
 import com.ugisozols.shoppinglistapp.utils.navigation.Route
@@ -48,6 +49,9 @@ class MainActivity : ComponentActivity() {
                                 scaffoldState = scaffoldState,
                                 navController::navigate
                             )
+                        }
+                        composable(Route.SHOPPING_LIST_ROUTE){
+                            ShoppingScreen(scaffoldState = scaffoldState)
                         }
                     }
                 }

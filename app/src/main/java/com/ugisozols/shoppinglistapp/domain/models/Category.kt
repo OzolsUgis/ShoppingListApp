@@ -42,5 +42,15 @@ sealed class Category(val name : String)  {
                 else -> General
             }
         }
+
+        val listOfCategories = listOf(
+            General,
+            Food,
+            House,
+            Garden,
+            Medicine,
+            Travel,
+            Car
+        )
     }
 }
