@@ -10,6 +10,7 @@ import com.ugisozols.shoppinglistapp.data.local.preferences.PreferencesImpl
 import com.ugisozols.shoppinglistapp.data.repository.ShoppingListRepositoryImpl
 import com.ugisozols.shoppinglistapp.domain.preferences.Preferences
 import com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository
+import com.ugisozols.shoppinglistapp.domain.use_cases.DeleteProducts
 import com.ugisozols.shoppinglistapp.domain.use_cases.GetProducts
 import com.ugisozols.shoppinglistapp.domain.use_cases.InsertProduct
 import com.ugisozols.shoppinglistapp.domain.use_cases.UseCases
@@ -66,6 +67,7 @@ object AppModule {
     @Singleton
     fun provideUseCases(repository: ShoppingListRepository) = UseCases(
         insertProduct = InsertProduct(repository),
-        getProducts = GetProducts(repository)
+        getProducts = GetProducts(repository),
+        deleteProducts = DeleteProducts(repository)
     )
 }

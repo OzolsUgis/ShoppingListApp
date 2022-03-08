@@ -112,7 +112,7 @@ fun ShoppingScreen(
                         }
                         IconButton(
                             onClick = {
-                                // TODO : Add functionality
+                                viewModel.deleteProductsFromList()
                             }
                         ) {
                             Icon(

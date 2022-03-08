@@ -68,7 +68,9 @@ class ShoppingListRepositoryImpl @Inject constructor(
     }
 
     override suspend fun deleteProducts(products: List<Product>) {
-        TODO("Not yet implemented")
+        products.forEach {
+            productRef.document(it.id!!).delete()
+        }
     }
 
     override suspend fun updateProduct(product: Product, value: Boolean) {

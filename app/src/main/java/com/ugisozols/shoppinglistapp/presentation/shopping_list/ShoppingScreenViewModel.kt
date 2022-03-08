@@ -1,5 +1,6 @@
 package com.ugisozols.shoppinglistapp.presentation.shopping_list
 
+import android.util.Log
 import androidx.compose.runtime.State
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -216,6 +217,16 @@ class ShoppingScreenViewModel @Inject constructor(
                     )
                 }
             }
+        }
+    }
+
+    /**
+     * Function collects data from [listOfCheckedProducts] list state
+     * and passes further to [UseCases.deleteProducts] function
+     */
+    fun deleteProductsFromList(){
+        viewModelScope.launch {
+            useCases.deleteProducts(listOfCheckedProducts.value)
         }
     }
 
