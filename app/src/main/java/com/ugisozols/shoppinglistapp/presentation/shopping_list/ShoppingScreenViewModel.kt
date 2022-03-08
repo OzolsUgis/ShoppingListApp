@@ -192,6 +192,7 @@ class ShoppingScreenViewModel @Inject constructor(
                 is UiEvent.ShowSnackbar -> {
                     _uiEvent.send(UiEvent.ShowSnackbar(event.message))
                 }
+                else -> Unit
             }
             name.value = ""
             amount.value = ""
@@ -215,6 +216,7 @@ class ShoppingScreenViewModel @Inject constructor(
                     is Resource.Error -> _uiEvent.send(
                         UiEvent.ShowSnackbar(UiText.StringResource(R.string.server_error))
                     )
+                    else -> Unit
                 }
             }
         }

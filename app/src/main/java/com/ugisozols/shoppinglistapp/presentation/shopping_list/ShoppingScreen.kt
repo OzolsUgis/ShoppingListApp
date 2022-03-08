@@ -47,6 +47,7 @@ fun ShoppingScreen(
                 is UiEvent.ShowSnackbar -> {
                     scaffoldState.snackbarHostState.showSnackbar(event.message.asString(context))
                 }
+                else -> Unit
             }
 
         }
@@ -141,7 +142,7 @@ fun ShoppingScreen(
 
                         }
                         is Resource.Success -> {
-                            LazyColumn() {
+                            LazyColumn {
                                 items(response.data!!) { products ->
                                     var isChecked by remember {
                                         mutableStateOf(false)
@@ -195,6 +196,7 @@ fun ShoppingScreen(
                                 }
                             }
                         }
+                        else -> Unit
                     }
                 }
             }
