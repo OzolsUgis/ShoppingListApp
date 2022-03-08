@@ -5,14 +5,17 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.ugisozols.shoppinglistapp.domain.models.Category
 import com.ugisozols.shoppinglistapp.domain.models.Product
 import com.ugisozols.shoppinglistapp.domain.preferences.Preferences
+import com.ugisozols.shoppinglistapp.domain.use_cases.UseCases
 import com.ugisozols.shoppinglistapp.utils.Resource
 import com.ugisozols.shoppinglistapp.utils.UiEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 /**
@@ -21,6 +24,7 @@ import javax.inject.Inject
  */
 @HiltViewModel
 class ShoppingScreenViewModel @Inject constructor(
+    private val useCases: UseCases,
     private val preferences: Preferences
 ) : ViewModel() {
 
@@ -162,6 +166,32 @@ class ShoppingScreenViewModel @Inject constructor(
     init {
         preferences.saveShouldShowWelcome(false)
         setUsername()
+    }
+
+    /**
+     * Function collects data from [name],[amount],[chosenCategoryName]
+     * and send this data to [UseCases.insertProduct] to validate and send further to
+     * repository
+     *
+     * In case of error return function sends event to [_uiEvent] to Show snackbar with error message
+     *
+     * after successfully executed function it return values in empty state
+     */
+    fun onAddProduct() {
+        viewModelScope.launch {
+            when (val event = useCases.insertProduct(
+                name = name.value,
+                amount = amount.value,
+                category = chosenCategoryName.value
+            )) {
+                is UiEvent.ShowSnackbar -> {
+                    _uiEvent.send(UiEvent.ShowSnackbar(event.message))
+                }
+            }
+            name.value = ""
+            amount.value = ""
+            chosenCategoryName.value = ""
+        }
     }
 
 

@@ -10,6 +10,8 @@ import com.ugisozols.shoppinglistapp.data.local.preferences.PreferencesImpl
 import com.ugisozols.shoppinglistapp.data.repository.ShoppingListRepositoryImpl
 import com.ugisozols.shoppinglistapp.domain.preferences.Preferences
 import com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository
+import com.ugisozols.shoppinglistapp.domain.use_cases.InsertProduct
+import com.ugisozols.shoppinglistapp.domain.use_cases.UseCases
 import com.ugisozols.shoppinglistapp.utils.Constants.DATE
 import com.ugisozols.shoppinglistapp.utils.Constants.SHARED_PREF_NAME
 import com.ugisozols.shoppinglistapp.utils.Constants.SHOPPING_LIST_APP
@@ -46,7 +48,6 @@ object AppModule {
         return ShoppingListRepositoryImpl(shoppingListRef,query)
     }
 
-
     @Provides
     @Singleton
     fun provideFirebase() = FirebaseFirestore.getInstance()
@@ -59,4 +60,10 @@ object AppModule {
     @Singleton
     fun provideQuery(productRef : CollectionReference) = productRef.orderBy(DATE)
 
+
+    @Provides
+    @Singleton
+    fun provideUseCases(repository: ShoppingListRepository) = UseCases(
+        insertProduct = InsertProduct(repository)
+    )
 }

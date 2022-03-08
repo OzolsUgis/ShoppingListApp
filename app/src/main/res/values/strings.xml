@@ -10,6 +10,8 @@
     <string name="alert_dialog_category_text">Category:</string>
     <string name="alert_dialog_noCategory_text">* if not chosen product will be seen in general category</string>
     <string name="greeting">Hello,</string>
+    <string name="inputEmpty">Please fill in all fields!</string>
+    <string name="successfully_added_product">Product added!</string>
 
 
 </resources>

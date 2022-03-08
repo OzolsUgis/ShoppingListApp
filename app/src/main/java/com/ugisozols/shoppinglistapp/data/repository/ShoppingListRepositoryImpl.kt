@@ -2,6 +2,7 @@ package com.ugisozols.shoppinglistapp.data.repository
 
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.Query
+import com.ugisozols.shoppinglistapp.data.mapper.toProductCollection
 import com.ugisozols.shoppinglistapp.domain.models.Product
 import com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository
 import com.ugisozols.shoppinglistapp.utils.Resource
@@ -26,7 +27,13 @@ class ShoppingListRepositoryImpl @Inject constructor(
     }
 
     override suspend fun insertProduct(product: Product) {
-        TODO("Not yet implemented")
+        val productId = productRef.document().id
+        val newProduct = product.copy(
+            id = productId
+        )
+        productRef.document(productId).set(
+            newProduct.toProductCollection()
+        )
     }
 
     override suspend fun deleteProducts(products: List<Product>) {

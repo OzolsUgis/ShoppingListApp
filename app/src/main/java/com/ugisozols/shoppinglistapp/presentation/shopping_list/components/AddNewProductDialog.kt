@@ -139,7 +139,7 @@ fun AddNewProductDialog(
         confirmButton = {
             Button(
                 onClick = {
-                    // Todo : Add insert function
+                    viewModel.onAddProduct()
                     viewModel.onShowDialog()
                 },
                 border = BorderStroke(1.dp, ObjectColor),
