@@ -1,4 +1,4 @@
-package com.ugisozols.shoppinglistapp.data.preferences
+package com.ugisozols.shoppinglistapp.data.local.preferences
 
 import android.content.SharedPreferences
 import com.ugisozols.shoppinglistapp.domain.models.UserInfo

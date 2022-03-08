@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1047834159697",
+    "project_id": "shoppinglistapp-f17f9",
+    "storage_bucket": "shoppinglistapp-f17f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047834159697:android:6dac46dc74a36aadbd6670",
+        "android_client_info": {
+          "package_name": "com.ugisozols.shoppinglistapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047834159697-5shm6disvcus73j7r8lub4mipbgcnd46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLHqcM0iMRhyRm_U256AGWBpDK3dNHawc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047834159697-5shm6disvcus73j7r8lub4mipbgcnd46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
