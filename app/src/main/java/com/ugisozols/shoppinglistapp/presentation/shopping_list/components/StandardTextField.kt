@@ -4,6 +4,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.TextField
 import androidx.compose.material.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.ugisozols.shoppinglistapp.presentation.ui.theme.ObjectColor
 import com.ugisozols.shoppinglistapp.presentation.ui.theme.TextColor
@@ -11,7 +12,8 @@ import com.ugisozols.shoppinglistapp.presentation.ui.theme.TextColor
 @Composable
 fun StandardTextField(
     value : String,
-    onValueChange : (String) -> Unit
+    onValueChange : (String) -> Unit,
+    modifier: Modifier
 ){
     TextField(
         value = value,
@@ -26,7 +28,8 @@ fun StandardTextField(
             focusedIndicatorColor = ObjectColor,
             focusedLabelColor = ObjectColor
         ),
-        textStyle = MaterialTheme.typography.body2
+        textStyle = MaterialTheme.typography.body2,
+        modifier = modifier
     )
 
 }

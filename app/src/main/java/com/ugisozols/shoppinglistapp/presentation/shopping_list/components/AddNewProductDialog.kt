@@ -68,9 +68,7 @@ fun AddNewProductDialog(
                     onInputValueChange = {
                         viewModel.onAddName(it)
                     },
-                    modifier = Modifier.semantics {
-                        contentDescription = "productName"
-                    }
+                    contentDescr = "productName"
                 )
                 Spacer(modifier = Modifier.height(spacing.spacingMedium))
                 InputRow(
@@ -79,9 +77,7 @@ fun AddNewProductDialog(
                     onInputValueChange = {
                         viewModel.onAddAmount(it)
                     },
-                    modifier = Modifier.semantics {
-                        contentDescription = "productAmount"
-                    }
+                    contentDescr = "productAmount"
                 )
                 Spacer(modifier = Modifier.height(spacing.spacingLarge))
                 Column {
@@ -189,10 +185,10 @@ private fun InputRow(
     inputValuesNameText: String,
     inputValue: String,
     onInputValueChange: (String) -> Unit,
-    modifier: Modifier
+    contentDescr : String
 ) {
     Row(
-        modifier
+        Modifier
             .fillMaxWidth()
             .wrapContentHeight(),
 
@@ -207,6 +203,9 @@ private fun InputRow(
             value = inputValue,
             onValueChange = {
                 onInputValueChange(it)
+            },
+            modifier = Modifier.semantics {
+                contentDescription = contentDescr
             }
         )
     }
