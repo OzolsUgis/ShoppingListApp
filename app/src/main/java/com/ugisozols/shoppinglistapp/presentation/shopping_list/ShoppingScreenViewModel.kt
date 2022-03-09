@@ -228,7 +228,23 @@ class ShoppingScreenViewModel @Inject constructor(
      */
     fun deleteProductsFromList(){
         viewModelScope.launch {
-            useCases.deleteProducts(listOfCheckedProducts.value)
+            when(val response = useCases.deleteProducts(listOfCheckedProducts.value)){
+                is Resource.Error -> {
+                    _uiEvent.send(
+                        UiEvent.ShowSnackbar(
+                            response.uiText ?: UiText.StringResource(R.string.delete_list_empty)
+                        )
+                    )
+                }
+                is Resource.Success -> {
+                    _uiEvent.send(
+                        UiEvent.ShowSnackbar(
+                            response.uiText ?: UiText.StringResource(R.string.delete_list_successful)
+                        )
+                    )
+                }
+                else -> Unit
+            }
         }
     }
 

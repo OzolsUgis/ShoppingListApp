@@ -1,7 +1,11 @@
 package com.ugisozols.shoppinglistapp.domain.use_cases
 
+import com.ugisozols.shoppinglistapp.R
 import com.ugisozols.shoppinglistapp.domain.models.Product
 import com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository
+import com.ugisozols.shoppinglistapp.utils.Resource
+import com.ugisozols.shoppinglistapp.utils.UiEvent
+import com.ugisozols.shoppinglistapp.utils.UiText
 
 
 /**
@@ -12,9 +16,12 @@ import com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository
 class DeleteProducts(
     private val repository: ShoppingListRepository
 ) {
-    suspend operator fun invoke(list : List<Product>){
-        if (list.isNotEmpty()){
-            repository.deleteProducts(list )
+    suspend operator fun invoke(list : List<Product>): Resource<Any>{
+        return if (list.isNotEmpty()){
+            repository.deleteProducts(list)
+            Resource.Success(null)
+        }else{
+            Resource.Error(UiText.StringResource(R.string.delete_list_empty))
         }
     }
 }

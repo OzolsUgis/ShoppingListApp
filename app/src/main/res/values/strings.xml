@@ -13,6 +13,8 @@
     <string name="inputEmpty">Please fill in all fields!</string>
     <string name="successfully_added_product">Product added!</string>
     <string name="server_error">Server Error</string>
+    <string name="delete_list_empty">No checked items</string>
+    <string name="delete_list_successful">Items deleted</string>
 
 
 </resources>
