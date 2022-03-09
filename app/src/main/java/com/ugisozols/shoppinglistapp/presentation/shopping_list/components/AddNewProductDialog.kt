@@ -169,6 +169,9 @@ fun AddNewProductDialog(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(spacing.spacingMedium)
+                    .semantics {
+                        contentDescription = "alertDialog_add"
+                    }
             ) {
                 Text(
                     text = stringResource(id = R.string.floating_action_button),

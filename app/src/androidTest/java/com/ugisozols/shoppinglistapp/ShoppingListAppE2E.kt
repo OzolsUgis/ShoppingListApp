@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.google.common.truth.Truth.assertThat
+import com.ugisozols.shoppinglistapp.domain.models.Category
 import com.ugisozols.shoppinglistapp.domain.models.UserInfo
 import com.ugisozols.shoppinglistapp.domain.preferences.Preferences
 import com.ugisozols.shoppinglistapp.domain.use_cases.*
@@ -112,6 +113,7 @@ class ShoppingListAppE2E {
         val usernameInput = "TestName"
         val productName = "TestProduct"
         val amount = "Test"
+        val selectedCategory = Category.General
 
         assertThat(
             navController.currentDestination
@@ -184,6 +186,85 @@ class ShoppingListAppE2E {
             .onNodeWithContentDescription("dialogDropdown")
             .performClick()
 
+        Category.listOfCategories.forEach {
+            composeRule
+                .onNodeWithText(it.name)
+                .assertExists()
+        }
+
+        composeRule
+            .onNodeWithText(selectedCategory.name)
+            .performClick()
+
+        Category.listOfCategories.forEach {
+            if (it == selectedCategory){
+                composeRule
+                    .onNodeWithText(it.name)
+                    .assertExists()
+            }else{
+                composeRule
+                    .onNodeWithText(it.name)
+                    .assertDoesNotExist()
+            }
+
+        }
+
+        composeRule
+            .onNodeWithContentDescription("alertDialog_add")
+            .performClick()
+
+        composeRule
+            .onNodeWithContentDescription("alertDialog")
+            .assertDoesNotExist()
+
+        composeRule
+            .onNodeWithText(productName)
+            .assertExists()
+
+        composeRule
+            .onNodeWithText(amount)
+            .assertExists()
+
+        composeRule
+            .onNodeWithContentDescription("expandButton")
+            .performClick()
+
+        composeRule
+            .onNodeWithContentDescription("expandedCatList")
+            .assertExists()
+
+        composeRule
+            .onNodeWithText(
+                Category.Garden.name[0].uppercase()+Category.Garden.name.substring(1)
+            )
+            .performClick()
+
+        composeRule
+            .onNodeWithContentDescription("expandedCatList")
+            .assertDoesNotExist()
+
+        composeRule
+            .onNodeWithText(
+                Category.Garden.name[0].uppercase()+Category.Garden.name.substring(1)
+            )
+            .assertExists()
+
+        composeRule
+            .onNodeWithText(productName)
+            .performClick()
+
+        composeRule
+            .onNodeWithContentDescription("deleteButton")
+            .performClick()
+
+
+        composeRule
+            .onNodeWithText(productName)
+            .assertDoesNotExist()
+
+        composeRule
+            .onNodeWithText(amount)
+            .assertDoesNotExist()
 
     }
 

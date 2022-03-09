@@ -3,6 +3,7 @@ package com.ugisozols.shoppinglistapp.repository
 import com.ugisozols.shoppinglistapp.domain.models.Product
 import com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository
 import com.ugisozols.shoppinglistapp.utils.Resource
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.filter
@@ -34,18 +35,9 @@ class ShoppingListRepositoryFake : ShoppingListRepository {
     }
 
     override suspend fun updateProduct(product: Product, value: Boolean) {
-        shoppingList.forEach {
-            if (it.id == product.id) {
-                shoppingList.remove(it)
-                shoppingList.add(
-                    product.copy(
-                        checked = value
-                    )
-                )
-            } else {
-                shoppingList.add(product.copy(checked = value))
-            }
-        }
+        shoppingList.remove(product)
+        delay(500L)
+        shoppingList.add(product.copy(checked = true))
         getProductsFlow.emit(Resource.Success(shoppingList))
     }
 }
