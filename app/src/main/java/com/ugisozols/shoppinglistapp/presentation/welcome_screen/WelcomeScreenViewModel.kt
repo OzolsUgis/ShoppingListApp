@@ -22,13 +22,43 @@ class WelcomeScreenViewModel @Inject constructor(
     var name = mutableStateOf("")
         private set
 
+    /**
+     * Function sets state to [name] variable
+     * takes [String] value as parameter, then
+     * sets current input field state to name variable
+     */
     fun onAddName(newName : String){
         name.value = newName
     }
 
+    /**
+     * Mutable value of [uiEvent] this sends oneTime events to UI
+     * This value can only be modified within viewModel because it's not correct
+     * to be able to access this outside viewModel
+     */
     private val _uiEvent = Channel<UiEvent>()
+
+
+
+    /**
+     * Immutable value of [_uiEvent] this gets observed in UI
+     */
     val uiEvent = _uiEvent.receiveAsFlow()
 
+
+    /**
+     * Function collects state on [name] if its empty
+     * then error message in form of [UiEvent.ShowSnackbar]
+     * is sent to [_uiEvent] to later be observed in UI and snackbar can be shown
+     *
+     * In case [name] state is not empty then its value gets passed
+     * to [Preferences.saveUserName] function which saves [name] in
+     * shared preferences
+     *
+     * Also in case of successful execution [UiEvent.Navigate] function is
+     * called and screen is navigated
+     *
+     */
     fun onNextClick(){
         viewModelScope.launch {
             if(name.value.isBlank()){
