@@ -17,6 +17,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -37,7 +39,10 @@ fun AddNewProductDialog(
     AlertDialog(
         modifier = Modifier
             .height(650.dp)
-            .width(500.dp),
+            .width(500.dp)
+            .semantics {
+                contentDescription = "alertDialog"
+            },
         onDismissRequest = {
             viewModel.onShowDialog()
         },
@@ -62,6 +67,9 @@ fun AddNewProductDialog(
                     inputValue = viewModel.name.value,
                     onInputValueChange = {
                         viewModel.onAddName(it)
+                    },
+                    modifier = Modifier.semantics {
+                        contentDescription = "productName"
                     }
                 )
                 Spacer(modifier = Modifier.height(spacing.spacingMedium))
@@ -70,6 +78,9 @@ fun AddNewProductDialog(
                     inputValue = viewModel.amount.value,
                     onInputValueChange = {
                         viewModel.onAddAmount(it)
+                    },
+                    modifier = Modifier.semantics {
+                        contentDescription = "productAmount"
                     }
                 )
                 Spacer(modifier = Modifier.height(spacing.spacingLarge))
@@ -93,7 +104,10 @@ fun AddNewProductDialog(
 
                         IconButton(onClick = {
                             viewModel.onCategoryListExpanded()
-                        }) {
+                        }, modifier = Modifier.semantics {
+                            contentDescription = "dialogDropdown"
+                        }
+                        ) {
                             Icon(
                                 imageVector = if (viewModel.isCategoryListExpanded) {
                                     Icons.Default.KeyboardArrowUp
@@ -121,7 +135,11 @@ fun AddNewProductDialog(
                                     .clickable {
                                         viewModel.onSelectCategory(category.name)
                                         viewModel.onCategoryListExpanded()
-                                    },
+                                    }
+                                    .semantics {
+                                        contentDescription = category.name
+                                    }
+                                ,
                                 horizontalArrangement = Arrangement.Center,
                                 verticalAlignment = Alignment.CenterVertically
 
@@ -170,10 +188,11 @@ fun AddNewProductDialog(
 private fun InputRow(
     inputValuesNameText: String,
     inputValue: String,
-    onInputValueChange: (String) -> Unit
+    onInputValueChange: (String) -> Unit,
+    modifier: Modifier
 ) {
     Row(
-        Modifier
+        modifier
             .fillMaxWidth()
             .wrapContentHeight(),
 

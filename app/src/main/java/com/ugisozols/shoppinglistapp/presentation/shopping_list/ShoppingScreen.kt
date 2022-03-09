@@ -19,6 +19,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -81,7 +83,11 @@ fun ShoppingScreen(
                         .padding(spacing.spacingMedium)
                 ) {
                     Text(
-                        modifier = Modifier.padding(start = spacing.spacingMedium),
+                        modifier = Modifier
+                            .padding(start = spacing.spacingMedium)
+                            .semantics {
+                                contentDescription = "greeting"
+                            },
                         text = stringResource(id = R.string.greeting) + viewModel.userName
                     )
                     Spacer(modifier = Modifier.height(spacing.spacingMedium))
@@ -98,7 +104,10 @@ fun ShoppingScreen(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         IconButton(
-                            onClick = { viewModel.isExpanded = !viewModel.isExpanded }
+                            onClick = { viewModel.isExpanded = !viewModel.isExpanded },
+                            modifier = Modifier.semantics {
+                                contentDescription = "expandButton"
+                            }
                         ) {
                             Icon(
                                 imageVector = if (viewModel.isExpanded) {
@@ -114,6 +123,9 @@ fun ShoppingScreen(
                         IconButton(
                             onClick = {
                                 viewModel.deleteProductsFromList()
+                            },
+                            modifier = Modifier.semantics {
+                                contentDescription = "deleteButton"
                             }
                         ) {
                             Icon(
@@ -170,7 +182,10 @@ fun ShoppingScreen(
                                         )
                                         .fillMaxWidth()
                                         .wrapContentHeight()
-                                        .padding(horizontal = spacing.spacingMedium),
+                                        .padding(horizontal = spacing.spacingMedium)
+                                        .semantics {
+                                            contentDescription = "listRow"
+                                        },
                                         horizontalArrangement = Arrangement.SpaceBetween,
                                         verticalAlignment = Alignment.CenterVertically
                                     ) {
@@ -206,7 +221,10 @@ fun ShoppingScreen(
                     ExpandableCategoriesList(
                         modifier = Modifier
                             .fillMaxWidth(0.5f)
-                            .fillMaxHeight(),
+                            .fillMaxHeight()
+                            .semantics {
+                                contentDescription = "expandedCatList"
+                            },
                         onCloseList = { viewModel.isExpanded = !viewModel.isExpanded },
                         onCategoryClick = {
                             viewModel.setCurrentCategory(it)

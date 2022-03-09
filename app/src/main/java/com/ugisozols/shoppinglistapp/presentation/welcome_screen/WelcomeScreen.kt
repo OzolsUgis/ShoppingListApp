@@ -18,6 +18,8 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.ugisozols.shoppinglistapp.R
@@ -27,7 +29,6 @@ import com.ugisozols.shoppinglistapp.presentation.ui.theme.ObjectColor
 import com.ugisozols.shoppinglistapp.presentation.ui.theme.TextColor
 import com.ugisozols.shoppinglistapp.utils.UiEvent
 import kotlinx.coroutines.flow.collect
-
 
 
 @Composable
@@ -40,9 +41,9 @@ fun WelcomeScreen(
     val spacing = LocalSpacing.current
     val context = LocalContext.current
 
-    LaunchedEffect(key1 = true){
+    LaunchedEffect(key1 = true) {
         viewModel.uiEvent.collect { event ->
-            when(event){
+            when (event) {
                 is UiEvent.ShowSnackbar -> {
                     scaffoldState.snackbarHostState.showSnackbar(event.message.asString(context))
                 }
@@ -58,7 +59,7 @@ fun WelcomeScreen(
         modifier = Modifier
             .fillMaxSize()
             .background(
-               color = LightPurple
+                color = LightPurple
             )
     ) {
         Column(
@@ -96,6 +97,9 @@ fun WelcomeScreen(
                 )
                 Spacer(modifier = Modifier.width(spacing.spacingMedium))
                 TextField(
+                    modifier = Modifier.semantics {
+                        contentDescription = "input_username"
+                    },
                     value = viewModel.name.value,
                     onValueChange = {
                         viewModel.onAddName(it)
