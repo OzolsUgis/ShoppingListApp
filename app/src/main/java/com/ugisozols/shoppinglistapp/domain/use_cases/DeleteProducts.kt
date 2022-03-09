@@ -17,11 +17,11 @@ class DeleteProducts(
     private val repository: ShoppingListRepository
 ) {
     suspend operator fun invoke(list : List<Product>): Resource<Any>{
-        return if (list.isNotEmpty()){
+        return if (list.isEmpty()){
+            Resource.Error(UiText.StringResource(R.string.delete_list_empty))
+        }else{
             repository.deleteProducts(list)
             Resource.Success(null)
-        }else{
-            Resource.Error(UiText.StringResource(R.string.delete_list_empty))
         }
     }
 }
