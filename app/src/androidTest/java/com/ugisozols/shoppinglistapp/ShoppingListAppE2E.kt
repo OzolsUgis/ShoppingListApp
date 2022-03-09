@@ -1,14 +1,17 @@
 package com.ugisozols.shoppinglistapp
 
+import android.util.Log
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Scaffold
 import androidx.compose.material.rememberScaffoldState
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.google.common.truth.Truth.assertThat
 import com.ugisozols.shoppinglistapp.domain.models.UserInfo
 import com.ugisozols.shoppinglistapp.domain.preferences.Preferences
 import com.ugisozols.shoppinglistapp.domain.use_cases.*
@@ -27,6 +30,7 @@ import io.mockk.every
 import io.mockk.mockk
 import org.junit.Before
 import org.junit.Rule
+import org.junit.Test
 
 @HiltAndroidTest
 class ShoppingListAppE2E {
@@ -48,10 +52,6 @@ class ShoppingListAppE2E {
 
     @Before
     fun setUp(){
-        preferences = mockk(relaxed = true)
-        every { preferences.loadUserName()} returns UserInfo(
-            name = "TestName"
-        )
 
         fakeRepository = ShoppingListRepositoryFake()
         useCases = UseCases(
@@ -60,6 +60,10 @@ class ShoppingListAppE2E {
             deleteProducts = DeleteProducts(fakeRepository),
             updateProduct = UpdateProduct(fakeRepository)
         )
+        preferences = mockk(relaxed = true)
+        every { preferences.loadUserName()} returns UserInfo(
+            name = "TestName"
+        )
         shoppingScreenViewModel = ShoppingScreenViewModel(
             useCases,
             preferences
@@ -67,6 +71,8 @@ class ShoppingListAppE2E {
         welcomeScreenViewModel = WelcomeScreenViewModel(
             preferences
         )
+
+
 
         composeRule.setContent {
             val scaffoldState = rememberScaffoldState()
@@ -99,6 +105,86 @@ class ShoppingListAppE2E {
                 }
             }
         }
+    }
+
+    @Test
+    fun addProductToList_productIsShownInList_afterwardsDeleted(){
+        val usernameInput = "TestName"
+        val productName = "TestProduct"
+        val amount = "Test"
+
+        assertThat(
+            navController.currentDestination
+                ?.route
+                ?.startsWith(Route.WELCOME_ROUTE)
+        ).isTrue()
+
+        composeRule
+            .onNodeWithText("ShoppingListApp")
+            .assertExists()
+        composeRule
+            .onNodeWithContentDescription("input_username")
+            .performTextInput(usernameInput)
+
+        composeRule
+            .onNodeWithText("Next")
+            .performClick()
+
+        assertThat(
+            navController.currentDestination
+                ?.route
+                ?.startsWith(Route.SHOPPING_LIST_ROUTE)
+        ).isTrue()
+
+        composeRule
+            .onNodeWithContentDescription("greeting")
+            .assertExists()
+
+        composeRule
+            .onNodeWithText("Hello,$usernameInput")
+            .assertExists()
+
+        composeRule
+            .onNodeWithContentDescription("expandButton")
+            .assertExists()
+
+        composeRule
+            .onNodeWithContentDescription("deleteButton")
+            .assertExists()
+
+        composeRule
+            .onNodeWithText("Add")
+            .performClick()
+
+        composeRule
+            .onNodeWithContentDescription("alertDialog")
+            .assertExists()
+
+        composeRule
+            .onNodeWithText("Add new product")
+            .assertExists()
+
+        composeRule
+            .onNodeWithText("Name:")
+            .assertExists()
+
+        composeRule
+            .onNodeWithText("Amount:")
+            .assertExists()
+
+        composeRule
+            .onNodeWithContentDescription("productName")
+            .performTextInput(productName)
+
+        composeRule
+            .onNodeWithContentDescription("productAmount")
+            .performTextInput(amount)
+
+        composeRule
+            .onNodeWithContentDescription("dialogDropdown")
+            .performClick()
+
+
     }
 
 }
