@@ -213,8 +213,8 @@ Xiaomi 11 Lite 5G NE
  * Max 2.4GHz Octa-core
 
 Application still contains some bugs because lack of experience and time pressure.
-Development process went fluent until documentation and testing implementation, thats the field 
-i don't have a lot experience. 
+Development process went fluent until documentation and testing implementation, due to lack of experience
+in specific fields
 
 Thanks for your time rewieving this project.
 
