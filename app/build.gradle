@@ -4,6 +4,8 @@ plugins {
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'com.google.gms.google-services'
+    id 'org.jetbrains.dokka'
+
 }
 
 android {
@@ -47,6 +49,11 @@ android {
         }
     }
 }
+
+tasks.dokkaJekyll.configure {
+    outputDirectory.set(file("../docs"))
+}
+
 
 dependencies {
 

@@ -1,0 +1,212 @@
+$dokka.format:jekyll-v1
+$dokka.linkExtension:html
+$dokka.location:com.ugisozols.shoppinglistapp.data.collection////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.collection/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.collection/ProductCollection///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.collection/-product-collection/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.collection/ProductCollection/ProductCollection/#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.Long?#kotlin.Boolean?#kotlin.String?/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.collection/-product-collection/-product-collection.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.collection/ProductCollection/amount/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.collection/-product-collection/amount.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.collection/ProductCollection/category/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.collection/-product-collection/category.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.collection/ProductCollection/checked/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.collection/-product-collection/checked.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.collection/ProductCollection/date/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.collection/-product-collection/date.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.collection/ProductCollection/id/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.collection/-product-collection/id.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.collection/ProductCollection/name/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.collection/-product-collection/name.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.local.preferences////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.local.preferences/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.local.preferences/PreferencesImpl///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.local.preferences/-preferences-impl/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.local.preferences/PreferencesImpl/PreferencesImpl/#android.content.SharedPreferences/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.local.preferences/-preferences-impl/-preferences-impl.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.local.preferences/PreferencesImpl/loadShouldShowWelcome/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.local.preferences/-preferences-impl/load-should-show-welcome.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.local.preferences/PreferencesImpl/loadUserName/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.local.preferences/-preferences-impl/load-user-name.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.local.preferences/PreferencesImpl/saveShouldShowWelcome/#kotlin.Boolean/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.local.preferences/-preferences-impl/save-should-show-welcome.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.local.preferences/PreferencesImpl/saveUserName/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.local.preferences/-preferences-impl/save-user-name.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.mapper////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.mapper/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.mapper//toProductCollection/com.ugisozols.shoppinglistapp.domain.models.Product#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.mapper/to-product-collection.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.mapper//toProducts/com.ugisozols.shoppinglistapp.data.collection.ProductCollection#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.mapper/to-products.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.repository////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.repository/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.repository/ShoppingListRepositoryImpl///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.repository/-shopping-list-repository-impl/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.repository/ShoppingListRepositoryImpl/ShoppingListRepositoryImpl/#com.google.firebase.firestore.CollectionReference#com.google.firebase.firestore.Query/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.repository/-shopping-list-repository-impl/-shopping-list-repository-impl.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.repository/ShoppingListRepositoryImpl/deleteProducts/#kotlin.collections.List[com.ugisozols.shoppinglistapp.domain.models.Product]/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.repository/-shopping-list-repository-impl/delete-products.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.repository/ShoppingListRepositoryImpl/getShoppingList/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.repository/-shopping-list-repository-impl/get-shopping-list.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.repository/ShoppingListRepositoryImpl/insertProduct/#com.ugisozols.shoppinglistapp.domain.models.Product/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.repository/-shopping-list-repository-impl/insert-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.data.repository/ShoppingListRepositoryImpl/updateProduct/#com.ugisozols.shoppinglistapp.domain.models.Product#kotlin.Boolean/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.data.repository/-shopping-list-repository-impl/update-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.di////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.di/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.di/AppModule///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.di/-app-module/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.di/AppModule/provideFirebase/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.di/-app-module/provide-firebase.html
+$dokka.location:com.ugisozols.shoppinglistapp.di/AppModule/providePreferences/#android.content.SharedPreferences/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.di/-app-module/provide-preferences.html
+$dokka.location:com.ugisozols.shoppinglistapp.di/AppModule/provideProductRef/#com.google.firebase.firestore.FirebaseFirestore/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.di/-app-module/provide-product-ref.html
+$dokka.location:com.ugisozols.shoppinglistapp.di/AppModule/provideQuery/#com.google.firebase.firestore.CollectionReference/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.di/-app-module/provide-query.html
+$dokka.location:com.ugisozols.shoppinglistapp.di/AppModule/provideSharedPreferences/#android.app.Application/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.di/-app-module/provide-shared-preferences.html
+$dokka.location:com.ugisozols.shoppinglistapp.di/AppModule/provideShoppingListRepository/#com.google.firebase.firestore.CollectionReference#com.google.firebase.firestore.Query/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.di/-app-module/provide-shopping-list-repository.html
+$dokka.location:com.ugisozols.shoppinglistapp.di/AppModule/provideUseCases/#com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.di/-app-module/provide-use-cases.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.Car///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-car/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.Companion///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-companion/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.Companion/fromString/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-companion/from-string.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.Companion/listOfCategories/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-companion/list-of-categories.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.Food///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-food/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.Garden///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-garden/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.General///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-general/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.House///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-house/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.Medicine///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-medicine/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category.Travel///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/-travel/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Category/name/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-category/name.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Product///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-product/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Product/Product/#kotlin.String#kotlin.String#com.ugisozols.shoppinglistapp.domain.models.Category#kotlin.Boolean#kotlin.Long#kotlin.String?/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-product/-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Product/amount/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-product/amount.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Product/category/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-product/category.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Product/checked/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-product/checked.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Product/date/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-product/date.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Product/id/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-product/id.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/Product/name/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-product/name.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/UserInfo///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-user-info/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/UserInfo/UserInfo/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-user-info/-user-info.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.models/UserInfo/name/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.models/-user-info/name.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.preferences////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.preferences/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.preferences/Preferences.Companion///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.preferences/-preferences/-companion/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.preferences/Preferences.Companion/KEY_NAME/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.preferences/-preferences/-companion/-k-e-y_-n-a-m-e.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.preferences/Preferences.Companion/KEY_SHOULD_SHOW_WELCOME/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.preferences/-preferences/-companion/-k-e-y_-s-h-o-u-l-d_-s-h-o-w_-w-e-l-c-o-m-e.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.preferences/Preferences///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.preferences/-preferences/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.preferences/Preferences/loadShouldShowWelcome/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.preferences/-preferences/load-should-show-welcome.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.preferences/Preferences/loadUserName/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.preferences/-preferences/load-user-name.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.preferences/Preferences/saveShouldShowWelcome/#kotlin.Boolean/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.preferences/-preferences/save-should-show-welcome.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.preferences/Preferences/saveUserName/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.preferences/-preferences/save-user-name.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.repository////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.repository/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.repository/ShoppingListRepository///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.repository/-shopping-list-repository/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.repository/ShoppingListRepository/deleteProducts/#kotlin.collections.List[com.ugisozols.shoppinglistapp.domain.models.Product]/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.repository/-shopping-list-repository/delete-products.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.repository/ShoppingListRepository/getShoppingList/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.repository/-shopping-list-repository/get-shopping-list.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.repository/ShoppingListRepository/insertProduct/#com.ugisozols.shoppinglistapp.domain.models.Product/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.repository/-shopping-list-repository/insert-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.repository/ShoppingListRepository/updateProduct/#com.ugisozols.shoppinglistapp.domain.models.Product#kotlin.Boolean/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.repository/-shopping-list-repository/update-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/DeleteProducts///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-delete-products/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/DeleteProducts/DeleteProducts/#com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-delete-products/-delete-products.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/DeleteProducts/invoke/#kotlin.collections.List[com.ugisozols.shoppinglistapp.domain.models.Product]/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-delete-products/invoke.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/GetProducts///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-get-products/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/GetProducts/GetProducts/#com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-get-products/-get-products.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/GetProducts/invoke/#com.ugisozols.shoppinglistapp.domain.models.Category?/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-get-products/invoke.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/InsertProduct///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-insert-product/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/InsertProduct/InsertProduct/#com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-insert-product/-insert-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/InsertProduct/invoke/#kotlin.String#kotlin.String#kotlin.String?/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-insert-product/invoke.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/UpdateProduct///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-update-product/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/UpdateProduct/UpdateProduct/#com.ugisozols.shoppinglistapp.domain.repository.ShoppingListRepository/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-update-product/-update-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/UpdateProduct/invoke/#com.ugisozols.shoppinglistapp.domain.models.Product#kotlin.Boolean/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-update-product/invoke.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/UseCases///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-use-cases/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/UseCases/UseCases/#com.ugisozols.shoppinglistapp.domain.use_cases.InsertProduct#com.ugisozols.shoppinglistapp.domain.use_cases.GetProducts#com.ugisozols.shoppinglistapp.domain.use_cases.DeleteProducts#com.ugisozols.shoppinglistapp.domain.use_cases.UpdateProduct/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-use-cases/-use-cases.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/UseCases/deleteProducts/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-use-cases/delete-products.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/UseCases/getProducts/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-use-cases/get-products.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/UseCases/insertProduct/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-use-cases/insert-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.domain.use_cases/UseCases/updateProduct/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.domain.use_cases/-use-cases/update-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list.components////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list.components/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list.components//AddNewProductDialog/#com.ugisozols.shoppinglistapp.presentation.shopping_list.ShoppingScreenViewModel/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list.components/-add-new-product-dialog.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list.components//ExpandableCategoriesList/#kotlin.Function0[kotlin.Unit]#kotlin.Function1[com.ugisozols.shoppinglistapp.domain.models.Category,kotlin.Unit]#androidx.compose.ui.Modifier/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list.components/-expandable-categories-list.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list.components//StandardTextField/#kotlin.String#kotlin.Function1[kotlin.String,kotlin.Unit]#androidx.compose.ui.Modifier/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list.components/-standard-text-field.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list//FloatingActionButton/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-floating-action-button.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list//ShoppingScreen/#androidx.compose.material.ScaffoldState#com.ugisozols.shoppinglistapp.presentation.shopping_list.ShoppingScreenViewModel/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/ShoppingScreenViewModel/#com.ugisozols.shoppinglistapp.domain.use_cases.UseCases#com.ugisozols.shoppinglistapp.domain.preferences.Preferences/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/-shopping-screen-view-model.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/amount/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/amount.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/chosenCategoryName/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/chosen-category-name.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/currentCategory/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/current-category.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/deleteProductsFromList/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/delete-products-from-list.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/getProductList/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/get-product-list.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/isCategoryListExpanded/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/is-category-list-expanded.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/isExpanded/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/is-expanded.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/name/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/name.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/onAddAmount/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/on-add-amount.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/onAddName/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/on-add-name.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/onAddProduct/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/on-add-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/onAddToList/#com.ugisozols.shoppinglistapp.domain.models.Product/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/on-add-to-list.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/onCategoryListExpanded/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/on-category-list-expanded.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/onRemoveFromList/#com.ugisozols.shoppinglistapp.domain.models.Product/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/on-remove-from-list.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/onSelectCategory/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/on-select-category.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/onShowDialog/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/on-show-dialog.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/productState/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/product-state.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/setCurrentCategory/#com.ugisozols.shoppinglistapp.domain.models.Category/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/set-current-category.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/showDialog/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/show-dialog.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/uiEvent/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/ui-event.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/updateCheckedProduct/#com.ugisozols.shoppinglistapp.domain.models.Product#kotlin.Boolean/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/update-checked-product.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.shopping_list/ShoppingScreenViewModel/userName/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.shopping_list/-shopping-screen-view-model/user-name.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//ColorDone/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-color-done.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//LightPink/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-light-pink.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//LightPurple/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-light-purple.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//LocalSpacing/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-local-spacing.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//ObjectColor/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-object-color.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//Shapes/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-shapes.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//ShoppingListAppTheme/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-shopping-list-app-theme.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//TextColor/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-text-color.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//Typography/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-typography.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme//roboto/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/roboto.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme/Spacing///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-spacing/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme/Spacing/Spacing/#androidx.compose.ui.unit.Dp#androidx.compose.ui.unit.Dp#androidx.compose.ui.unit.Dp#androidx.compose.ui.unit.Dp/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-spacing/-spacing.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme/Spacing/spacingExtraLarge/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-spacing/spacing-extra-large.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme/Spacing/spacingLarge/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-spacing/spacing-large.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme/Spacing/spacingMedium/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-spacing/spacing-medium.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.ui.theme/Spacing/spacingSmall/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.ui.theme/-spacing/spacing-small.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.welcome_screen////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.welcome_screen/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.welcome_screen//WelcomeScreen/#androidx.compose.material.ScaffoldState#kotlin.Function1[com.ugisozols.shoppinglistapp.utils.UiEvent.Navigate,kotlin.Unit]#com.ugisozols.shoppinglistapp.presentation.welcome_screen.WelcomeScreenViewModel/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.welcome_screen/-welcome-screen.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.welcome_screen/WelcomeScreenViewModel///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.welcome_screen/-welcome-screen-view-model/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.welcome_screen/WelcomeScreenViewModel/WelcomeScreenViewModel/#com.ugisozols.shoppinglistapp.domain.preferences.Preferences/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.welcome_screen/-welcome-screen-view-model/-welcome-screen-view-model.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.welcome_screen/WelcomeScreenViewModel/name/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.welcome_screen/-welcome-screen-view-model/name.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.welcome_screen/WelcomeScreenViewModel/onAddName/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.welcome_screen/-welcome-screen-view-model/on-add-name.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.welcome_screen/WelcomeScreenViewModel/onNextClick/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.welcome_screen/-welcome-screen-view-model/on-next-click.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation.welcome_screen/WelcomeScreenViewModel/uiEvent/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation.welcome_screen/-welcome-screen-view-model/ui-event.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation/MainActivity///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation/-main-activity/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation/MainActivity/MainActivity/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation/-main-activity/-main-activity.html
+$dokka.location:com.ugisozols.shoppinglistapp.presentation/MainActivity/preferences/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.presentation/-main-activity/preferences.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils.navigation////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils.navigation/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils.navigation//navigate/androidx.navigation.NavController#com.ugisozols.shoppinglistapp.utils.UiEvent.Navigate/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils.navigation/navigate.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils.navigation/Route///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils.navigation/-route/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils.navigation/Route/SHOPPING_LIST_ROUTE/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils.navigation/-route/-s-h-o-p-p-i-n-g_-l-i-s-t_-r-o-u-t-e.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils.navigation/Route/WELCOME_ROUTE/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils.navigation/-route/-w-e-l-c-o-m-e_-r-o-u-t-e.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils////PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Constants///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-constants/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Constants/CATEGORY_FIELD/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-constants/-c-a-t-e-g-o-r-y_-f-i-e-l-d.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Constants/CHECKED_FIELD/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-constants/-c-h-e-c-k-e-d_-f-i-e-l-d.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Constants/DATE/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-constants/-d-a-t-e.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Constants/SHARED_PREF_NAME/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-constants/-s-h-a-r-e-d_-p-r-e-f_-n-a-m-e.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Constants/SHOPPING_LIST_APP/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-constants/-s-h-o-p-p-i-n-g_-l-i-s-t_-a-p-p.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Resource.Error///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-resource/-error/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Resource.Error/Error/#com.ugisozols.shoppinglistapp.utils.UiText#TypeParam(bounds=[kotlin.Any?])?/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-resource/-error/-error.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Resource.Loading///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-resource/-loading/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Resource.Loading/Loading/#TypeParam(bounds=[kotlin.Any?])?/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-resource/-loading/-loading.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Resource.Success///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-resource/-success/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Resource.Success/Success/#TypeParam(bounds=[kotlin.Any?])?/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-resource/-success/-success.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Resource///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-resource/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Resource/data/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-resource/data.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/Resource/uiText/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-resource/ui-text.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiEvent.Navigate///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-event/-navigate/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiEvent.Navigate/Navigate/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-event/-navigate/-navigate.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiEvent.Navigate/route/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-event/-navigate/route.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiEvent.ShowSnackbar///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-event/-show-snackbar/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiEvent.ShowSnackbar/ShowSnackbar/#com.ugisozols.shoppinglistapp.utils.UiText/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-event/-show-snackbar/-show-snackbar.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiEvent.ShowSnackbar/message/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-event/-show-snackbar/message.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiEvent///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-event/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiText.DynamicString///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-text/-dynamic-string/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiText.DynamicString/DynamicString/#kotlin.String/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-text/-dynamic-string/-dynamic-string.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiText.DynamicString/text/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-text/-dynamic-string/text.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiText.StringResource///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-text/-string-resource/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiText.StringResource/StringResource/#kotlin.Int/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-text/-string-resource/-string-resource.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiText.StringResource/resId/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-text/-string-resource/res-id.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiText///PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-text/index.html
+$dokka.location:com.ugisozols.shoppinglistapp.utils/UiText/asString/#android.content.Context/PointingToDeclaration/app/com.ugisozols.shoppinglistapp.utils/-ui-text/as-string.html
+$dokka.location:com.ugisozols.shoppinglistapp////PointingToDeclaration/app/com.ugisozols.shoppinglistapp/index.html
+$dokka.location:com.ugisozols.shoppinglistapp/ShoppingListApp///PointingToDeclaration/app/com.ugisozols.shoppinglistapp/-shopping-list-app/index.html
+$dokka.location:com.ugisozols.shoppinglistapp/ShoppingListApp/ShoppingListApp/#/PointingToDeclaration/app/com.ugisozols.shoppinglistapp/-shopping-list-app/-shopping-list-app.html
+com.ugisozols.shoppinglistapp
+com.ugisozols.shoppinglistapp.data.collection
+com.ugisozols.shoppinglistapp.data.local.preferences
+com.ugisozols.shoppinglistapp.data.mapper
+com.ugisozols.shoppinglistapp.data.repository
+com.ugisozols.shoppinglistapp.di
+com.ugisozols.shoppinglistapp.domain.models
+com.ugisozols.shoppinglistapp.domain.preferences
+com.ugisozols.shoppinglistapp.domain.repository
+com.ugisozols.shoppinglistapp.domain.use_cases
+com.ugisozols.shoppinglistapp.presentation
+com.ugisozols.shoppinglistapp.presentation.shopping_list
+com.ugisozols.shoppinglistapp.presentation.shopping_list.components
+com.ugisozols.shoppinglistapp.presentation.ui.theme
+com.ugisozols.shoppinglistapp.presentation.welcome_screen
+com.ugisozols.shoppinglistapp.utils
+com.ugisozols.shoppinglistapp.utils.navigation
+
