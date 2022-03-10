@@ -116,6 +116,8 @@ fun WelcomeScreen(
                         backgroundColor = Color.Transparent,
                         cursorColor = ObjectColor,
                         focusedIndicatorColor = ObjectColor,
+                        disabledIndicatorColor = ObjectColor,
+                        unfocusedIndicatorColor  = ObjectColor,
                         focusedLabelColor = ObjectColor
                     ),
                     textStyle = MaterialTheme.typography.body2
