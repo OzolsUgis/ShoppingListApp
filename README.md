@@ -150,6 +150,27 @@ This application contains 2 types of tests:
 
 
 
+## Architecture
+
+  For arcthitecture i used layer pattern, i decided to not make one feature and put these layers in there, It would be unnecessary for 
+  project this size 
+  
+  Architecture contains 3 main layers : 
+  * <a href="#data">Data</a>
+  * <a href="#domain">Domain</a>
+  * <a href="#presentation">Presentation</a>
+
+
+  
+  ### Data
+   * Contains data class what specifies how data looks in database.
+   * Implemntation of Preferences interface
+   * Mapper functions to Map database data to data that is visible in UI, and other way around
+   * Implementation of Repository interface
+
+
+  
+ 
 
 
 
