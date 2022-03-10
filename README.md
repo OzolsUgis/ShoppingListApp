@@ -80,6 +80,8 @@ using :
 * [Dokka](https://github.com/Kotlin/dokka)
 * [Kdoc](https://kotlinlang.org/docs/kotlin-doc.html)
 
+<p align="right" dir="auto">(<a href="#top">back to top</a>)</p>
+
 ## Getting Started
 ### Prerequisites 
 
@@ -102,6 +104,8 @@ you can find installation step-by-step in following :
 2. **Sync** project if it's needed and project is ready to use 
 
 
+
+<p align="right" dir="auto">(<a href="#top">back to top</a>)</p>
 
 ## Usage
 
@@ -149,6 +153,8 @@ This application contains 2 types of tests:
    ![product-screenshot](https://live.staticflickr.com/65535/51929945504_0ffd678291_w.jpg)
 
 
+<p align="right" dir="auto">(<a href="#top">back to top</a>)</p>
+
 
 ## Architecture
 
@@ -160,13 +166,75 @@ This application contains 2 types of tests:
   * <a href="#domain">Domain</a>
   * <a href="#presentation">Presentation</a>
 
+  This type of architecture is uset to provide separation of concepts.
+  
+  * Presentation layer only have access to Domain layer, but can't access Data layer directly
+  * Data layer only accesses Domain layer, can't directly access to Presentation layer
+  * Domain layer cant access any layers
+
+  This structure and usage of interfaces makes application scalable and easy testable. 
 
   
   ### Data
-   * Contains data class what specifies how data looks in database.
+  
+  Contains:
+   * Data class what specifies how data looks in database.
    * Implemntation of Preferences interface
    * Mapper functions to Map database data to data that is visible in UI, and other way around
    * Implementation of Repository interface
+
+  ### Domain 
+  
+  Contains:
+   * Models (data classes) how data looks in the UI
+   * Preferences interface (Implemented in Data package)
+   * Repository interface (Implemented in Data package)
+   * UseCases, contains buisness logic (Used in viewModels)
+    
+  ### Presentation 
+  
+  Contains: 
+   * ShoppingList screen composition, components & ViewModel
+   * Application UI Theme functions 
+   * Welcome screen composition & ViewModel
+   * MainActivity (contains navigation functionality)
+
+
+
+<p align="right" dir="auto">(<a href="#top">back to top</a>)</p>
+
+## Additional inforamtion
+
+Application is built and tested on real device
+
+Xiaomi 11 Lite 5G NE
+ * Android version 11
+ * 8 Gb RAM
+ * Max 2.4GHz Octa-core
+
+Application still contains some bugs because lack of experience and time pressure.
+Development process went fluent until documentation and testing implementation, thats the field 
+i don't have a lot experience. 
+
+Thanks for your time rewieving this project.
+
+## Contacts
+
+Ugis Ozols - https://www.linkedin.com/in/ozols-ugis/
+
+E-mail - ozols.ugis@outlook.com
+
+Contact number  +371 25715943
+
+WebPage - https://ozolsugis.com/
+
+Project Link - https://github.com/OzolsUgis/ShoppingListApp.git
+
+
+
+ 
+   
+   
 
 
   
