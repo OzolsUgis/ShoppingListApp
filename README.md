@@ -201,9 +201,9 @@ This application contains 2 types of tests:
 
 
 
-<p align="right" dir="auto">(<a href="#top">back to top</a>)</p>
+<p align="right" dir="auto"><a href="#top">back to top</a></p>
 
-## Additional inforamtion
+## Additional information
 
 Application is built and tested on real device
 
