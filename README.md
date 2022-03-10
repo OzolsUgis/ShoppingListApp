@@ -115,14 +115,17 @@ You can run application in <b>Run/Debug</b> section in your toolbar. By pressing
 
 ![product-screenshot](https://live.staticflickr.com/65535/51929651713_80ab1af532_w.jpg)
 
-### Run Test
+### Run Tests
 
 This application contains 2 types of tests: 
 
 * Instrumented UI test
 * Unit Tests
 
-To launch Unit test you need to locate to tests directory.
+<b><h3>!!! Important</h3></b>
+* If any errors occurr while testing instrumented test try to run them separately
+
+<b><h3>To launch Unit test you need to locate to tests directory.</h3></b>
 
 
    <b>App -> java -> com(test)</b>
@@ -131,6 +134,22 @@ To launch Unit test you need to locate to tests directory.
   
 
 ![product-screenshot](https://live.staticflickr.com/65535/51930197985_2a1c0f315d_w.jpg)
+
+
+<b><h3>To launch instrmented tests, locate to androidtest directory</h3></b>
+
+   ```Instrumented tests are in "androidTest" package, they require specific android functionality```
+
+
+   <b>App -> java -> com(androidTest)</b>
+
+
+   after location to this state use right click on <b>shoppinglistapp</b> and <b>Run'Tests in 'com.ugisozols.shoppinglistapp'</b>
+   
+   ![product-screenshot](https://live.staticflickr.com/65535/51929945504_0ffd678291_w.jpg)
+
+
+
 
 
 
