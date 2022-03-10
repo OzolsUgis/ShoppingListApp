@@ -80,7 +80,7 @@ using :
 * [Dokka](https://github.com/Kotlin/dokka)
 * [Kdoc](https://kotlinlang.org/docs/kotlin-doc.html)
 
-<p align="right" dir="auto">(<a href="#top">back to top</a>)</p>
+<p align="right" dir="auto"><a href="#top">back to top</a></p>
 
 ## Getting Started
 ### Prerequisites 
@@ -105,7 +105,7 @@ you can find installation step-by-step in following :
 
 
 
-<p align="right" dir="auto">(<a href="#top">back to top</a>)</p>
+<p align="right" dir="auto"><a href="#top">back to top</a></p>
 
 ## Usage
 
@@ -153,7 +153,7 @@ This application contains 2 types of tests:
    ![product-screenshot](https://live.staticflickr.com/65535/51929945504_0ffd678291_w.jpg)
 
 
-<p align="right" dir="auto">(<a href="#top">back to top</a>)</p>
+<p align="right" dir="auto"><a href="#top">back to top</a></p>
 
 
 ## Architecture
