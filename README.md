@@ -53,3 +53,91 @@
 
 ## About Project
 
+Shopping list application general purpose is to help guide you through everyday shopping. This shopping list app allows you to chose categories for your products, to keep 
+your list organised.
+
+Application is built to cover all functions that you need for this kind of tracking : 
+* Adding your name 
+* Observing list changes 
+* Adding new products to list sorted by categories
+* Checking product when product is in shopping cart
+* Deleting checked product after its bought
+* Sharing this app with your friends allows you to make common shopping lists 
+
+### Built With 
+
+This application is built in  [Android Studio version 2021.1.1 (Bumblebee)](https://developer.android.com/studio?gclid=CjwKCAjwgb6IBhAREiwAgMYKRlU8WsxaTu6kg3JANeH6rEr8MrWyit5JaDfcTy0v1tTP0-DOmL1QnRoCxrcQAvD_BwE&gclsrc=aw.ds) 
+using :
+
+* [Kotlin](https://developer.android.com/kotlin)
+* [Jetpack Compose version 1.1.0](https://developer.android.com/jetpack/compose?gclid=EAIaIQobChMImIyxhI-i8gIVlgCiAx3kZgYlEAAYASAAEgL1J_D_BwE&gclsrc=aw.ds)
+* [Cloud Firestore](https://firebase.google.com/docs/firestore/)
+* [Courotines](https://developer.android.com/kotlin/coroutines?gclid=EAIaIQobChMIqZC4jo-i8gIVsAZ7Ch1rOASzEAAYASAAEgKAwvD_BwE&gclsrc=aw.ds)
+* [DaggerHilt](https://developer.android.com/training/dependency-injection/hilt-android)
+* [Mockk](https://mockk.io/)
+* [Truth](https://truth.dev/)
+* [JUnit4](https://github.com/junit-team/junit4/wiki)
+* [Dokka](https://github.com/Kotlin/dokka)
+* [Kdoc](https://kotlinlang.org/docs/kotlin-doc.html)
+
+## Getting Started
+### Prerequisites 
+
+First of all you need to install Android Studio version 2021.1.1 (Bumblebee) or any version who supports Jetpack compose
+you can find installation step-by-step in following : 
+
+* [Android Studio version 2021.1.1 (Bumblebee)](https://developer.android.com/studio?gclid=CjwKCAjwgb6IBhAREiwAgMYKRlU8WsxaTu6kg3JANeH6rEr8MrWyit5JaDfcTy0v1tTP0-DOmL1QnRoCxrcQAvD_BwE&gclsrc=aw.ds) 
+
+### Installation 
+
+1. Clone the repository using : 
+
+  * Android studio **file -> New -> Project from version control...** And enter this https://github.com/OzolsUgis/ShoppingListApp.git in URL
+
+  * Using terminal 
+  ```sh
+   git clone https://github.com/OzolsUgis/ShoppingListApp.git
+   ```
+   
+2. **Sync** project if it's needed and project is ready to use 
+
+
+
+## Usage
+
+* In this section is shown how to run application and how to run tests built for this app.
+
+### Run Application
+
+After project is cloned (If not please clone the project, you can find how to do it in <a href="#installation">Installation</a> section
+
+You can run application in <b>Run/Debug</b> section in your toolbar. By pressing <b>Play icon</b> 
+
+![product-screenshot](https://live.staticflickr.com/65535/51929651713_80ab1af532_w.jpg)
+
+### Run Test
+
+This application contains 2 types of tests: 
+
+* Instrumented UI test
+* Unit Tests
+
+To launch Unit test you need to locate to tests directory.
+
+
+   <b>App -> java -> com(test)</b>
+   
+   after location to this state use left click on <b>shoppinglistapp</b> and <b>Run'Tests in 'com.ugisozols.shoppinglistapp'</b>
+  
+
+![product-screenshot](https://live.staticflickr.com/65535/51930197985_2a1c0f315d_w.jpg)
+
+
+
+
+
+
+
+
+
+
